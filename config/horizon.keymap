@@ -140,7 +140,7 @@ v /*
 		label = "TD_HYPHY";
 		#binding-cells = <0>;
 		tapping-term-ms = <200>;
-		bindings = <&kp LBKT>, <&kp NON_US_HASH>;
+		bindings = <&kp RA(Y)>, <&kp RA(S)>;
 	};
 	td1: space_tap_dance {
 		compatible = "zmk,behavior-tap-dance";
@@ -168,7 +168,7 @@ v /*
 		label = "TD_SWITCHY";
 		#binding-cells = <0>;
 		tapping-term-ms = <200>;
-		bindings = <&kp TAB>, <&kp LG(LS(EQUAL))>;
+		bindings = <&kp TAB>, <&kp LG(GRAVE)>;
 	};
 	td5: option_control {
 		compatible = "zmk,behavior-tap-dance";
@@ -177,40 +177,40 @@ v /*
 		tapping-term-ms = <200>;
 		bindings = <&kp LALT>, <&kp LCTRL>;
 	};
-	par: paranthesis_tap_dance {
+		par: parenthesis_tap_dance {
 		compatible = "zmk,behavior-tap-dance";
 		label = "TD_PAR";
 		#binding-cells = <0>;
 		tapping-term-ms = <200>;
-		bindings = <&kp LS(N8)>, <&kp LS(N9)>;
+		bindings = <&kp LPAR>, <&kp RPAR>;
 	};
 	sqr: sqrbracket_tap_dance {
 		compatible = "zmk,behavior-tap-dance";
 		label = "TD_SQR";
 		#binding-cells = <0>;
 		tapping-term-ms = <200>;
-		bindings = <&kp LA(N5)>, <&kp LA(N6)>;
+		bindings = <&kp LBKT>, <&kp RBKT>;
 	};
 	ptd: ptdbracket_tap_dance {
 		compatible = "zmk,behavior-tap-dance";
 		label = "TD_PTD";
 		#binding-cells = <0>;
 		tapping-term-ms = <200>;
-		bindings = <&kp GRAVE>, <&kp LS(GRAVE)>;
+		bindings = <&kp LESS_THAN>, <&kp GREATER_THAN>;
 	};
 	crly: crlybracket_tap_dance {
 		compatible = "zmk,behavior-tap-dance";
 		label = "TD_CRLY";
 		#binding-cells = <0>;
 		tapping-term-ms = <200>;
-		bindings = <&kp LA(N8)>, <&kp LA(N9)>;
+		bindings = <&kp LBRC>, <&kp RBRC>;
 	};
 	accent: accent_tap_dance {
 		compatible = "zmk,behavior-tap-dance";
 		label = "TD_ACNT";
 		#binding-cells = <0>;
 		tapping-term-ms = <200>;
-		bindings = <&kp LS(EQUAL)>, <&kp EQUAL>;
+		bindings = <&kp GRAVE>, <&kp LS(GRAVE)>;
 	};
     };
 
@@ -218,13 +218,13 @@ v /*
         compatible = "zmk,combos";
 	combo_sys {
             timeout-ms = <50>;
-            key-positions = <35 41>;
+            key-positions = <37 48>;
 	    require-prior-idle-ms = <175>;
             bindings = <&mo SYS_L>;
         };
 	combo_num {
             timeout-ms = <50>;
-            key-positions = <39 40>;
+            key-positions = <46 47>;
 	    require-prior-idle-ms = <175>;
             bindings = <&mo NUM_R>;
         };
@@ -238,22 +238,22 @@ v /*
             timeout-ms = <50>;
             key-positions = <5 6>;
 	    require-prior-idle-ms = <175>;
-            bindings = <&kp LS(BSLH)>;
+            bindings = <&kp APOS>;
         };
 	combo_slsh {
             timeout-ms = <50>;
             key-positions = <7 8>;
-            bindings = <&kp LS(N7)>;
+            bindings = <&kp SLASH>;
         };
 	combo_vert {
             timeout-ms = <50>;
             key-positions = <8 9>;
-            bindings = <&kp LA(N7)>;
+	    bindings = <&kp PIPE>;
         };
 	combo_bkslsh {
             timeout-ms = <50>;
             key-positions = <9 10>;
-            bindings = <&kp LA(LS(N7))>;
+            bindings = <&kp BSLH>;
         };
 	combo_deg {
             timeout-ms = <50>;
@@ -264,17 +264,17 @@ v /*
             timeout-ms = <50>;
 	    require-prior-idle-ms = <175>;
             key-positions = <14 15>;
-            bindings = <&kp LS(RBKT)>;
+            bindings = <&kp ASTRK>;
         };
 	combo_plus {
             timeout-ms = <50>;
             key-positions = <15 16>;
-            bindings = <&kp RBKT>;
+            bindings = <&kp PLUS>;
         };
 	combo_dblqt {
             timeout-ms = <50>;
             key-positions = <17 18>;
-            bindings = <&kp LS(N2)>;
+            bindings = <&kp DQT>;
         };
 	combo_par {
             timeout-ms = <50>;
@@ -299,57 +299,57 @@ v /*
 	combo_circ {
             timeout-ms = <50>;
             key-positions = <24 25>;
-            bindings = <&kp NUBS>;
+            bindings = <&kp CARET>;
         };
 	combo_capsword {
             timeout-ms = <50>;
-            key-positions = <24 35>;
+            key-positions = <24 37>;
             bindings = <&caps_word>;
         };
 	combo_prct {
             timeout-ms = <50>;
             key-positions = <25 26>;
-            bindings = <&kp LS(N5)>;
+            bindings = <&kp PERCENT>;
         };
 	combo_hash {
             timeout-ms = <50>;
 	    require-prior-idle-ms = <175>;
             key-positions = <26 27>;
-            bindings = <&kp BSLH>;
+            bindings = <&kp HASH>;
         };
 	combo_amprsnd {
             timeout-ms = <50>;
             key-positions = <27 28>;
-            bindings = <&kp LS(N6)>;
+            bindings = <&kp AMPS>;
         };
 	combo_acnt {
             timeout-ms = <50>;
-            key-positions = <29 30>;
+            key-positions = <29 32>;
             bindings = <&accent>;
         };
 	combo_em {
             timeout-ms = <50>;
-            key-positions = <31 32>;
-            bindings = <&kp LA(SLASH)>;
+            key-positions = <33 34>;
+            bindings = <&kp LA(MINUS)>;
         };
 	combo_excl {
             timeout-ms = <50>;
-            key-positions = <32 33>;
-            bindings = <&kp LS(N1)>;
+            key-positions = <34 35>;
+            bindings = <&kp EXCL>;
         };
 	combo_qstn {
             timeout-ms = <50>;
-            key-positions = <33 34>;
-            bindings = <&kp LS(NUHS)>;
+            key-positions = <35 36>;
+            bindings = <&kp QMARK>;
         };
 	combo_eqls {
             timeout-ms = <50>;
-            key-positions = <34 35>;
-            bindings = <&kp LS(N0)>;
+            key-positions = <36 37>;
+            bindings = <&kp EQUAL>;
         };
 	combo_backword {
             timeout-ms = <50>;
-            key-positions = <38 39>;
+            key-positions = <43 46>;
             bindings = <&kp LA(BKSP)>;
         };
 // numbers combos
@@ -403,25 +403,25 @@ v /*
         };
 	combo_one {
             timeout-ms = <50>;
-            key-positions = <28 31>;
+            key-positions = <28 33>;
 	    require-prior-idle-ms = <175>;
             bindings = <&kp N1>;
         };
 	combo_two {
             timeout-ms = <50>;
-            key-positions = <27 32>;
+            key-positions = <27 34>;
 	    require-prior-idle-ms = <175>;
             bindings = <&kp N2>;
         };
 	combo_three {
             timeout-ms = <50>;
-            key-positions = <26 33>;
+            key-positions = <26 35>;
 	    require-prior-idle-ms = <175>;
             bindings = <&kp N3>;
         };
 	combo_zerobottom {
             timeout-ms = <50>;
-            key-positions = <25 34>;
+            key-positions = <25 36>;
 	    require-prior-idle-ms = <175>;
             bindings = <&kp N0>;
         };
