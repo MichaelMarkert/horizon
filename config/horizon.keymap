@@ -175,7 +175,7 @@
 		label = "TD_OPTCONT";
 		#binding-cells = <0>;
 		tapping-term-ms = <200>;
-		bindings = <&kp LALT>, <&kp LCTRL>;
+		bindings = <&kp RALT>, <&kp RCTRL>;
 	};
 		par: parenthesis_tap_dance {
 		compatible = "zmk,behavior-tap-dance";
