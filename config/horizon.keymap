@@ -142,7 +142,7 @@
 		label = "TD_HYPHY";
 		#binding-cells = <0>;
 		tapping-term-ms = <200>;
-		bindings = <&kp RA(Y)>, <&kp RA(S)>;
+		bindings = <&kp LBKT>, <&kp NON_US_HASH>;
 	};
 	td1: space_tap_dance {
 		compatible = "zmk,behavior-tap-dance";
@@ -170,46 +170,116 @@
 		label = "TD_SWITCHY";
 		#binding-cells = <0>;
 		tapping-term-ms = <200>;
-		bindings = <&kp TAB>, <&kp LG(GRAVE)>;
+		bindings = <&kp TAB>, <&kp LG(LS(EQUAL))>;
 	};
 	td5: option_control {
 		compatible = "zmk,behavior-tap-dance";
 		label = "TD_OPTCONT";
 		#binding-cells = <0>;
 		tapping-term-ms = <200>;
-		bindings = <&kp RALT>, <&kp RCTRL>;
+		bindings = <&kp LALT>, <&kp LCTRL>;
 	};
-		par: parenthesis_tap_dance {
+	par: paranthesis_tap_dance {
 		compatible = "zmk,behavior-tap-dance";
 		label = "TD_PAR";
 		#binding-cells = <0>;
 		tapping-term-ms = <200>;
-		bindings = <&kp LPAR>, <&kp RPAR>;
+		bindings = <&kp LS(N8)>, <&kp LS(N9)>;
 	};
 	sqr: sqrbracket_tap_dance {
 		compatible = "zmk,behavior-tap-dance";
 		label = "TD_SQR";
 		#binding-cells = <0>;
 		tapping-term-ms = <200>;
-		bindings = <&kp LBKT>, <&kp RBKT>;
+		bindings = <&kp LA(N5)>, <&kp LA(N6)>;
 	};
 	ptd: ptdbracket_tap_dance {
 		compatible = "zmk,behavior-tap-dance";
 		label = "TD_PTD";
 		#binding-cells = <0>;
 		tapping-term-ms = <200>;
-		bindings = <&kp LESS_THAN>, <&kp GREATER_THAN>;
+		bindings = <&kp GRAVE>, <&kp LS(GRAVE)>;
 	};
 	crly: crlybracket_tap_dance {
 		compatible = "zmk,behavior-tap-dance";
 		label = "TD_CRLY";
 		#binding-cells = <0>;
 		tapping-term-ms = <200>;
-		bindings = <&kp LBRC>, <&kp RBRC>;
+		bindings = <&kp LA(N8)>, <&kp LA(N9)>;
 	};
 	accent: accent_tap_dance {
 		compatible = "zmk,behavior-tap-dance";
 		label = "TD_ACNT";
+		#binding-cells = <0>;
+		tapping-term-ms = <200>;
+		bindings = <&kp LS(EQUAL)>, <&kp EQUAL>;
+	};
+	td0_w: hyphen_tap_dance_w {
+		compatible = "zmk,behavior-tap-dance";
+		label = "TD_HYPHY_w";
+		#binding-cells = <0>;
+		tapping-term-ms = <200>;
+		bindings = <&kp RA(Y)>, <&kp RA(S)>;
+	};
+	td1_w: space_tap_dance_w {
+		compatible = "zmk,behavior-tap-dance";
+		label = "TD_SPACY_w";
+		#binding-cells = <0>;
+		tapping-term-ms = <200>;
+		bindings = <&kp SPACE>, <&kp RET>;
+	};
+	td2_w: bksp_mod_tap_dance_w {
+		compatible = "zmk,behavior-tap-dance";
+		label = "TD_BACKSPACY_w";
+		#binding-cells = <0>;
+		tapping-term-ms = <200>;
+		bindings = <&kp BKSP>, <&mt RA(ESC) ESC>;
+	};
+	td4_w: windowswitch_tap_dance_w {
+		compatible = "zmk,behavior-tap-dance";
+		label = "TD_SWITCHY_w";
+		#binding-cells = <0>;
+		tapping-term-ms = <200>;
+		bindings = <&kp TAB>, <&kp LG(GRAVE)>;
+	};
+	td5_w: option_control_w {
+		compatible = "zmk,behavior-tap-dance";
+		label = "TD_OPTCONT_w";
+		#binding-cells = <0>;
+		tapping-term-ms = <200>;
+		bindings = <&kp RALT>, <&kp RCTRL>;
+	};
+	par_w: parenthesis_tap_dance_w {
+		compatible = "zmk,behavior-tap-dance";
+		label = "TD_PAR_w";
+		#binding-cells = <0>;
+		tapping-term-ms = <200>;
+		bindings = <&kp LPAR>, <&kp RPAR>;
+	};
+	sqr_w: sqrbracket_tap_dance_w {
+		compatible = "zmk,behavior-tap-dance";
+		label = "TD_SQR_w";
+		#binding-cells = <0>;
+		tapping-term-ms = <200>;
+		bindings = <&kp LBKT>, <&kp RBKT>;
+	};
+	ptd_w: ptdbracket_tap_dance_w {
+		compatible = "zmk,behavior-tap-dance";
+		label = "TD_PTD_w";
+		#binding-cells = <0>;
+		tapping-term-ms = <200>;
+		bindings = <&kp LESS_THAN>, <&kp GREATER_THAN>;
+	};
+	crly_w: crlybracket_tap_dance_w {
+		compatible = "zmk,behavior-tap-dance";
+		label = "TD_CRLY_w";
+		#binding-cells = <0>;
+		tapping-term-ms = <200>;
+		bindings = <&kp LBRC>, <&kp RBRC>;
+	};
+	accent_w: accent_tap_dance_w {
+		compatible = "zmk,behavior-tap-dance";
+		label = "TD_ACNT_w";
 		#binding-cells = <0>;
 		tapping-term-ms = <200>;
 		bindings = <&kp GRAVE>, <&kp LS(GRAVE)>;
@@ -435,8 +505,8 @@
             label = "Macbase";
             bindings = <
  &td4    	&kp Q   &kp W      &kp E      &kp R       &kp T                   &kp Y    &kp U       &kp I       &kp O      &kp P      &td0
- &mo NAV_L  	&kp A   &kp S      &kp D      &kp F       &kp G                   &kp H    &kp J       &kp K       &kp L      &kp RA(P)  &lt NAV_L RA(Q)
- &kp LSHFT  	&kp Z   &kp X      &kp C      &kp V       &kp B    &none &none    &kp N    &kp M       &kp COMMA   &kp DOT    &kp MINUS  &kp RSHIFT
+ &mo NAV_L  	&kp A   &kp S      &kp D      &kp F       &kp G                   &kp H    &kp J       &kp K       &kp L      &kp SEMI  &lt NAV_L RA(Q)
+ &kp LSHFT  	&kp Z   &kp X      &kp C      &kp V       &kp B    &none &none    &kp N    &kp M       &kp COMMA   &kp DOT    &kp FSLH  &kp RSHIFT
  &none      	&none   &none      &td5   &kp LGUI &lt NUM_R BKSP  &none &none    &td1     &kp RGUI    &td5   	   &none      &none 	 &none 
             >;
         };
@@ -444,10 +514,10 @@
 	winbase_layer {
             label = "Winbase";
             bindings = <
- &td4    	&kp Q   &kp W      &kp E      &kp R       &kp T                   &kp Z    &kp U       &kp I       &kp O      &kp P      &td0
+ &td4_w    	&kp Q   &kp W      &kp E      &kp R       &kp T                   &kp Z    &kp U       &kp I       &kp O      &kp P      &td0_w
  &mo NAV_L  	&kp A   &kp S      &kp D      &kp F       &kp G                   &kp H    &kp J       &kp K       &kp L      &kp RA(P)  &lt NAV_L RA(Q)
  &kp LSHFT  	&kp Y   &kp X      &kp C      &kp V       &kp B    &none &none    &kp N    &kp M       &kp COMMA   &kp DOT    &kp MINUS  &kp RSHIFT
- &none      	&none   &none      &td5   &kp LGUI &lt NUM_R BKSP  &none &none    &td1     &kp RGUI    &td5   	   &none      &none 	 &none 
+ &none      	&none   &none      &td5_w   &kp LGUI &lt NUM_R BKSP  &none &none    &td1_w     &kp RGUI    &td5_w   	   &none      &none 	 &none 
             >;
         };
 
