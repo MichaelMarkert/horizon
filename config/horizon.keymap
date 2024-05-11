@@ -324,108 +324,129 @@
             key-positions = <5 6>;
 	    require-prior-idle-ms = <175>;
             bindings = <&kp LS(BSLH)>;
+	    layers = <0>;
         };
 	combo_slsh {
             timeout-ms = <50>;
             key-positions = <7 8>;
             bindings = <&kp LS(N7)>;
+	    layers = <0>;
         };
 	combo_vert {
             timeout-ms = <50>;
             key-positions = <8 9>;
             bindings = <&kp LA(N7)>;
+	    layers = <0>;
         };
 	combo_bkslsh {
             timeout-ms = <50>;
             key-positions = <9 10>;
             bindings = <&kp LA(LS(N7))>;
+	    layers = <0>;
         };
 	combo_deg {
             timeout-ms = <50>;
             key-positions = <12 13>;
             bindings = <&kp LS(NUBS)>;
+	    layers = <0>;
         };
 	combo_star {
             timeout-ms = <50>;
 	    require-prior-idle-ms = <175>;
             key-positions = <14 15>;
             bindings = <&kp LS(RBKT)>;
+	    layers = <0>;
         };
 	combo_plus {
             timeout-ms = <50>;
             key-positions = <15 16>;
             bindings = <&kp RBKT>;
+	    layers = <0>;
         };
 	combo_dblqt {
             timeout-ms = <50>;
             key-positions = <17 18>;
             bindings = <&kp LS(N2)>;
+	    layers = <0>;
         };
 	combo_par {
             timeout-ms = <50>;
             key-positions = <19 20>;
             bindings = <&par>;
+	    layers = <0>;
         };
 	combo_sqr {
             timeout-ms = <50>;
             key-positions = <20 21>;
             bindings = <&sqr>;
+	    layers = <0>;
         };
 	combo_ptd {
             timeout-ms = <50>;
             key-positions = <21 22>;
             bindings = <&ptd>;
+	    layers = <0>;
         };
 	combo_crly {
             timeout-ms = <50>;
             key-positions = <22 23>;
             bindings = <&crly>;
+	    layers = <0>;
         };
 	combo_circ {
             timeout-ms = <50>;
             key-positions = <24 25>;
             bindings = <&kp NUBS>;
+	    layers = <0>;
         };
 	combo_prct {
             timeout-ms = <50>;
             key-positions = <25 26>;
             bindings = <&kp LS(N5)>;
+	    layers = <0>;
         };
 	combo_hash {
             timeout-ms = <50>;
 	    require-prior-idle-ms = <175>;
             key-positions = <26 27>;
             bindings = <&kp BSLH>;
+	    layers = <0>;
         };
 	combo_amprsnd {
             timeout-ms = <50>;
             key-positions = <27 28>;
             bindings = <&kp LS(N6)>;
+	    layers = <0>;
         };
 	combo_acnt {
             timeout-ms = <50>;
             key-positions = <29 30>;
             bindings = <&accent>;
+	    layers = <0>;
         };
 	combo_em {
             timeout-ms = <50>;
             key-positions = <31 32>;
             bindings = <&kp LA(SLASH)>;
+	    layers = <0>;
         };
 	combo_excl {
             timeout-ms = <50>;
             key-positions = <32 33>;
-            bindings = <&kp LS(N1)>;
+            bindings = <&kp LS(N1)>; 
+	    layers = <0>;
         };
 	combo_qstn {
             timeout-ms = <50>;
             key-positions = <33 34>;
             bindings = <&kp LS(NUHS)>;
+	    layers = <0>;
         };
 	combo_eqls {
             timeout-ms = <50>;
             key-positions = <34 35>;
             bindings = <&kp LS(N0)>;
+	    layers = <0>;
         };
 	combo_snglqt_w {
 	    layers = <1>;
