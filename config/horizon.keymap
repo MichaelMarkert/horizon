@@ -303,7 +303,7 @@
         };
 	combo_ret {
             timeout-ms = <50>;
-            key-positions = <19 20 21 22>;
+            key-positions = <19 20 21>;
             bindings = <&kp RET>;
 	    layers = <0 1>;
         };
@@ -420,31 +420,31 @@
         };
 	combo_acnt {
             timeout-ms = <50>;
-            key-positions = <29 30>;
+            key-positions = <29 32>;
             bindings = <&accent>;
 	    layers = <0>;
         };
 	combo_em {
             timeout-ms = <50>;
-            key-positions = <31 32>;
+            key-positions = <33 34>;
             bindings = <&kp LA(SLASH)>;
 	    layers = <0>;
         };
 	combo_excl {
             timeout-ms = <50>;
-            key-positions = <32 33>;
+            key-positions = <34 35>;
             bindings = <&kp LS(N1)>; 
 	    layers = <0>;
         };
 	combo_qstn {
             timeout-ms = <50>;
-            key-positions = <33 34>;
+            key-positions = <35 36>;
             bindings = <&kp LS(NUHS)>;
 	    layers = <0>;
         };
 	combo_eqls {
             timeout-ms = <50>;
-            key-positions = <34 35>;
+            key-positions = <36 37>;
             bindings = <&kp LS(N0)>;
 	    layers = <0>;
         };
