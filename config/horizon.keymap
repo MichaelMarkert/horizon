@@ -303,7 +303,7 @@
         };
 	combo_ret {
             timeout-ms = <50>;
-            key-positions = <19 20 21 22>;
+            key-positions = <19 22>;
 	    require-prior-idle-ms = <175>;
             bindings = <&kp RET>;
 	    layers = <0 1>;
