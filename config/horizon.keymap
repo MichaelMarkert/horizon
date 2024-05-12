@@ -215,7 +215,20 @@
 		tapping-term-ms = <200>;
 		bindings = <&kp LS(EQUAL)>, <&kp EQUAL>;
 	};
-	
+	td0_w: hyphen_tap_dance_w {
+		compatible = "zmk,behavior-tap-dance";
+		label = "TD_HYPHY_w";
+		#binding-cells = <0>;
+		tapping-term-ms = <200>;
+		bindings = <&kp RA(Y)>, <&kp RA(S)>;
+	};
+	td4_w: windowswitch_tap_dance_w {
+		compatible = "zmk,behavior-tap-dance";
+		label = "TD_SWITCHY_w";
+		#binding-cells = <0>;
+		tapping-term-ms = <200>;
+		bindings = <&kp TAB>, <&kp LG(GRAVE)>;
+	};
     };
 
   combos {
@@ -462,7 +475,7 @@
 	winbase_layer {
             label = "Winbase";
             bindings = <
- &td4    	&kp Q   &kp W      &kp E      &kp R       &kp T                   &kp Z    &kp U       &kp I       &kp O      &kp P      &td0
+ &td4_w    	&kp Q   &kp W      &kp E      &kp R       &kp T                   &kp Z    &kp U       &kp I       &kp O      &kp P      &td0_w
  &mo NAV_L  	&kp A   &kp S      &kp D      &kp F       &kp G                   &kp H    &kp J       &kp K       &kp L      &kp RA(P)  &lt NAV_L RA(Q)
  &kp LSHFT  	&kp Y   &kp X      &kp C      &kp V       &kp B    &none &none    &kp N    &kp M       &kp COMMA   &kp DOT    &kp MINUS  &kp RSHIFT
  &none      	&none   &none      &td5   &kp LGUI &lt NUM_R BKSP  &none &none    &td1     &kp RGUI    &td5   	   &none      &none 	 &none 
