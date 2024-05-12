@@ -518,10 +518,10 @@
             bindings = <&ptd_w>;
         };
 	combo_crly_w {
-	    layers = <1>;
             timeout-ms = <50>;
             key-positions = <22 23>;
             bindings = <&crly_w>;
+	    layers = <0>;
         };
 	combo_circ_w {
 	    layers = <1>;
