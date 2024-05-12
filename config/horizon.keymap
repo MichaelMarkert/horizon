@@ -463,10 +463,10 @@
             bindings = <&none>;
         };
 	combo_crly_w {
+	    layers = <1>;
             timeout-ms = <50>;
             key-positions = <22 23>;
             bindings = <&none>;
-	    layers = <0>;
         };
 	combo_circ_w {
 	    layers = <1>;
