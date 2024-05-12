@@ -229,6 +229,41 @@
 		tapping-term-ms = <200>;
 		bindings = <&kp TAB>, <&kp LG(GRAVE)>;
 	};
+	par_w: parenthesis_tap_dance_w {
+		compatible = "zmk,behavior-tap-dance";
+		label = "TD_PAR_w";
+		#binding-cells = <0>;
+		tapping-term-ms = <200>;
+		bindings = <&kp LPAR>, <&kp RPAR>;
+	};
+	sqr_w: sqrbracket_tap_dance_w {
+		compatible = "zmk,behavior-tap-dance";
+		label = "TD_SQR_w";
+		#binding-cells = <0>;
+		tapping-term-ms = <200>;
+		bindings = <&kp LBKT>, <&kp RBKT>;
+	};
+	ptd_w: ptdbracket_tap_dance_w {
+		compatible = "zmk,behavior-tap-dance";
+		label = "TD_PTD_w";
+		#binding-cells = <0>;
+		tapping-term-ms = <200>;
+		bindings = <&kp LESS_THAN>, <&kp GREATER_THAN>;
+	};
+	crly_w: crlybracket_tap_dance_w {
+		compatible = "zmk,behavior-tap-dance";
+		label = "TD_CRLY_w";
+		#binding-cells = <0>;
+		tapping-term-ms = <200>;
+		bindings = <&kp LBRC>, <&kp RBRC>;
+	};
+	accent_w: accent_tap_dance_w {
+		compatible = "zmk,behavior-tap-dance";
+		label = "TD_ACNT_w";
+		#binding-cells = <0>;
+		tapping-term-ms = <200>;
+		bindings = <&kp GRAVE>, <&kp LS(GRAVE)>;
+	};
     };
 
   combos {
@@ -444,6 +479,24 @@
             key-positions = <17 18>;
             bindings = <&kp DQT>;
         };
+	combo_par_w {
+	    layers = <1>;
+            timeout-ms = <50>;
+            key-positions = <19 20>;
+            bindings = <&par_w>;
+        };
+	combo_sqr_w {
+	    layers = <1>;
+            timeout-ms = <50>;
+            key-positions = <20 21>;
+            bindings = <&sqr_w>;
+        };
+	combo_ptd_w {
+	    layers = <1>;
+            timeout-ms = <50>;
+            key-positions = <21 22>;
+            bindings = <&ptd_w>;
+        };
 	combo_circ_w {
 	    layers = <1>;
             timeout-ms = <50>;
@@ -472,7 +525,7 @@
 	    layers = <1>;
             timeout-ms = <50>;
             key-positions = <29 32>;
-            bindings = <&none>;
+            bindings = <&accent_w>;
         };
 	combo_em_w {
 	    layers = <1>;
