@@ -280,15 +280,9 @@
             bindings = <&mo NUM_R>;
 	    layers = <0 1>;
         };
-	combo_ret {
-            timeout-ms = <50>;
-            key-positions = <19 22>;
-            bindings = <&kp RET>;
-	    layers = <0 1>;
-        };
 	combo_ret2 {
             timeout-ms = <50>;
-            key-positions = <19 20 21 22>;
+            key-positions = <13 14 15 16>;
             bindings = <&kp RET>;
 	    layers = <0 1>;
         };
@@ -478,6 +472,30 @@
             timeout-ms = <50>;
             key-positions = <17 18>;
             bindings = <&kp DQT>;
+        };
+	combo_par_w {
+	    layers = <1>;
+            timeout-ms = <50>;
+            key-positions = <19 20>;
+            bindings = <&par_w>;
+        };
+	combo_sqr_w {
+	    layers = <1>;
+            timeout-ms = <50>;
+            key-positions = <20 21>;
+            bindings = <&sqr_w>;
+        };
+	combo_ptd_w {
+	    layers = <1>;
+            timeout-ms = <50>;
+            key-positions = <21 22>;
+            bindings = <&ptd_w>;
+        };
+	combo_crly_w {
+            timeout-ms = <50>;
+            key-positions = <22 23>;
+            bindings = <&crly_w>;
+	    layers = <0>;
         };
 	combo_circ_w {
 	    layers = <1>;
